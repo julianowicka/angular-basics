@@ -1,0 +1,18 @@
+<div>
+  <h3>Here what to do:</h3>
+   
+  <div>
+    <ul>
+    @for (todo of todos(); track todo.id) {
+      <li>{{ todo.title }}
+        @if(todo.isDone) {
+          ✔️ 
+        } @else {
+          ❌ <button (click)="changeStatus(todo.id)">Change to done</button>
+        }
+      </li>
+    }
+    </ul>  
+  </div>
+</div>
+

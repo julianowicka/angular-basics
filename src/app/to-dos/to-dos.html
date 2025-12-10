@@ -1,0 +1,8 @@
+<div>
+  <h2>Hello World from to-dos</h2>
+  
+  <app-display-list [todos]="list" (onToChangeStatus)="changeStatus($event)"></app-display-list>
+  
+  <app-add-to-do (onTodoAdded)="addItem($event)" ></app-add-to-do>
+</div>
+
